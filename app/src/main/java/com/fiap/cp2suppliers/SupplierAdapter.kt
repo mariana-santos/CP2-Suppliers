@@ -22,6 +22,7 @@ class SupplierAdapter(private val supplierList: List<Supplier>, private val cont
                     val intent = Intent(context, SupplierDetailsActivity::class.java).apply {
                         putExtra("name", clickedSupplier.name)
                         putExtra("category", clickedSupplier.category)
+                        putExtra("score", clickedSupplier.score)
                     }
                     context.startActivity(intent)
                 }

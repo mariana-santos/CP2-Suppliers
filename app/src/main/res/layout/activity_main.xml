@@ -5,21 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main"
+    android:layout_gravity="center"
+    android:padding="20dp"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="20dp"
-        android:text="Fornecedores disponíveis"
+        android:text="Categorias dispiníveis"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
+        android:layout_marginBottom="20dp"
         android:textFontWeight="500"
         android:textSize="30sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/electronics"
+        android:text="Eletrônicos" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/household"
+        android:text="Eletrodomésticos" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:paddingHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/health"
+        android:text="Saúde" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/officeSupplies"
+        android:text="Escritório" />
 </LinearLayout>

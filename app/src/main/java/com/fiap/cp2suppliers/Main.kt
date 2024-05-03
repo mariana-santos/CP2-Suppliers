@@ -1,28 +1,29 @@
 package com.fiap.cp2suppliers
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.fiap.cp2suppliers.databinding.ActivityMainBinding
 
 class Main : AppCompatActivity() {
 
-    private lateinit var recyclerView: RecyclerView
-
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        recyclerView = findViewById(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this)
+        binding.household.setOnClickListener { navigate("Eletrodomésticos") }
+        binding.electronics.setOnClickListener { navigate("Eletrônicos") }
+        binding.health.setOnClickListener { navigate("Saúde") }
+        binding.officeSupplies.setOnClickListener { navigate("Escritório") }
+    }
 
-        val supplierList = listOf(
-            Supplier("Fornecedor 1", "Categoria A"),
-            Supplier("Fornecedor 2", "Categoria B"),
-        )
-
-        val adapter = SupplierAdapter(supplierList, this)
-        recyclerView.adapter = adapter
-
+    private fun navigate(category: String) {
+        val intent = Intent(this, SupplierListActivity::class.java)
+        val bundle = Bundle()
+        bundle.putString("category", category)
+        intent.putExtras(bundle)
+        startActivity(intent)
     }
 }

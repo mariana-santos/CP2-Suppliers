@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    android:orientation="vertical"
-    tools:context=".SupplierDetailsActivity">
+    tools:context=".SupplierListActivity"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -18,23 +17,24 @@
             android:layout_height="wrap_content"
             android:background="@color/purple_500"
             android:padding="10dp"
-            android:id="@+id/backList"
-            android:layout_marginRight="10dp"
-            android:text="Voltar à lista"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/purple_500"
-            android:padding="10dp"
             android:id="@+id/backHome"
             android:text="Início"/>
     </LinearLayout>
 
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Fornecedores disponíveis"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textFontWeight="500"
+        android:textSize="30sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
 
 </LinearLayout>
