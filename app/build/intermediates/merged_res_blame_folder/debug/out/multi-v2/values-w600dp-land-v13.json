@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.fiap.cp2suppliers.app-mergeDebugResources-57:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\maria\\.gradle\\caches\\transforms-3\\bd122451122e3f759030617bb8a3465c\\transformed\\material-1.11.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

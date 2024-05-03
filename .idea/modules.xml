@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CP2Suppliers.iml" filepath="$PROJECT_DIR$/.idea/modules/CP2Suppliers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CP2Suppliers.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
