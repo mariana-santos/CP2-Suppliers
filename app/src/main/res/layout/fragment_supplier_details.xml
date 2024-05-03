@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SupplierItem">
+    tools:context=".FragmentSupplierDetails">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,22 +11,30 @@
         android:padding="10dp"
         android:layout_margin="10dp"
         android:orientation="vertical"
-        android:backgroundTint="@color/purple_200">
+        android:background="@color/purple_200">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nome do fornecedor"
             android:textSize="20sp"
-            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
             android:id="@+id/supplier_name" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Categoria do fornecedor"
             android:textSize="15sp"
-            android:backgroundTint="@color/gray"
+            android:textColor="@color/gray"
             android:id="@+id/supplier_category" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crie uma nova cotação"
+            android:background="@color/purple_500"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp" />
     </LinearLayout>
 
 </FrameLayout>
